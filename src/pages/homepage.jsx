@@ -16,11 +16,11 @@ const HomePage = () => {
         <img
           src="/images/photo2.JPG"
           alt="Christian Joseph"
-          className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
+          className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-102"
         />
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Profile</h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mb-4">
             Hi! I'm{" "}
             <span className="font-semibold text-blue-800">
               Christian Joseph
@@ -40,10 +40,17 @@ const HomePage = () => {
             . I love building intuitive web applications and exploring new
             technologies.
           </p>
+          <a
+            href="Resume1_christianjoseph_aug.pdf"
+            download="Christian_Joseph_Resume.pdf"
+            className="text-blue-500 hover:text-blue-800 hover:underline transition"
+          >
+            <strong>[Download Resume]</strong>{" "}
+          </a>
         </div>
       </section>
 
-      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-102">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
         <ul className="space-y-16">
           {" "}
@@ -94,11 +101,10 @@ const HomePage = () => {
             <img
               src="/images/fooddash1.jpg"
               alt="Food Dash Website"
-              className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              className="w-full max-w-md rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               loading="lazy"
             />
           </li>
-          {/* ===== PROJECT 2 ===== */}
           <li>
             <strong className="text-lg">E-Commerce Prototype Website</strong>
             <p className="text-gray-600 mt-2 mb-4">
@@ -133,7 +139,45 @@ const HomePage = () => {
 
             <img
               src="/images/shop.jpg"
-              className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              className="w-full max-w-md rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              alt="E-Commerce Website"
+            />
+          </li>
+          <li>
+            <strong className="text-lg"> CJ Travel Website</strong>
+            <p className="text-gray-600 mt-2 mb-4">
+              {" "}
+              A website design project built with HTML and CSS.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                HTML
+              </span>
+              <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">
+                CSS
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-2 mb-4">
+              <a
+                href="https://cj-travel-website.vercel.app"
+                className="text-blue-500 hover:text-blue-800 hover:underline transition"
+              >
+                <strong>[Click Here for Live Preview]</strong>
+              </a>
+
+              <a
+                href="https://github.com/cjoseph001/cj-travel-website"
+                className="text-green-500 hover:text-green-800 hover:underline transition"
+              >
+                <strong>[GitHub Link]</strong>
+              </a>
+            </div>
+
+            <img
+              src="/images/trav.jpg"
+              className="w-full max-w-md rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               alt="E-Commerce Website"
             />
           </li>
@@ -173,7 +217,7 @@ const HomePage = () => {
             <img
               src="/images/circ.jpg"
               alt="Circuit Analysis App"
-              className="w-[130px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              className="w-[150px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
             />
           </li>
         </ul>
@@ -224,7 +268,7 @@ const HomePage = () => {
           <li>
             <a
               href="https://github.com/cjoseph001"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-800 hover:underline transition"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -234,13 +278,16 @@ const HomePage = () => {
           <li>
             <a
               href="https://www.linkedin.com/in/christian-joseph-997a2a221/"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-800 hover:underline transition"
             >
               <strong>[LinkedIn] </strong>
             </a>
           </li>
           <li>
-            <a href="cjoseph001@e.ntu.edu.sg" className="text-blue-500">
+            <a
+              href="cjoseph001@e.ntu.edu.sg"
+              className="text-blue-500 hover:text-blue-800 hover:underline transition"
+            >
               <strong>[Email]</strong>
             </a>
           </li>

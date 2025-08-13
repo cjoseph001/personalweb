@@ -14,7 +14,7 @@ const HomePage = () => {
 
       <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 mx-auto mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <img
-          src="/public/images/photo2.jpg"
+          src="/images/photo2.jpg"
           alt="Christian Joseph"
           className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
         />
@@ -84,7 +84,7 @@ const HomePage = () => {
             </div>
 
             <img
-              src="/public/images/fooddash1.jpg"
+              src="/images/fooddash1.jpg"
               alt="Food Dash Website"
               className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               loading="lazy"
@@ -125,7 +125,7 @@ const HomePage = () => {
             </div>
 
             <img
-              src="public/images/shop.jpg"
+              src="/images/shop.jpg"
               className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               alt="E-Commerce Website"
             />
@@ -164,7 +164,7 @@ const HomePage = () => {
             </div>
 
             <img
-              src="/public/images/circ.jpg"
+              src="/images/circ.jpg"
               alt="Circuit Analysis App"
               className="w-[130px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
             />

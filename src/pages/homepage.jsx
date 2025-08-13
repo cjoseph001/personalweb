@@ -14,7 +14,7 @@ const HomePage = () => {
 
       <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 mx-auto mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <img
-          src="/src/assets/images/photo2.jpg"
+          src="/public/images/photo2.jpg"
           alt="Christian Joseph"
           className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
         />
@@ -84,7 +84,7 @@ const HomePage = () => {
             </div>
 
             <img
-              src="/src/assets/images/fooddash1.jpg"
+              src="/public/images/fooddash1.jpg"
               alt="Food Dash Website"
               className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               loading="lazy"
@@ -125,19 +125,17 @@ const HomePage = () => {
             </div>
 
             <img
-              src="src/assets/images/shop.jpg"
+              src="public/images/shop.jpg"
               className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
               alt="E-Commerce Website"
             />
           </li>
-          {/* ===== PROJECT 3 ===== */}
           <li>
             <strong className="text-lg">Circuit Analysis App</strong>
             <p className="text-gray-600 mt-2">
-              {/* ADDED: Project description placeholder */}A cross platform
-              mobile app for calculating electrical circuit values with
-              step-by-step solutions, built using Flutter and Dart and optimized
-              for iOS devices.
+              A cross platform mobile app for calculating electrical circuit
+              values with step-by-step solutions, built using Flutter and Dart
+              and optimized for iOS devices.
             </p>
 
             <div className="flex flex-wrap gap-2 mt-3">
@@ -166,7 +164,7 @@ const HomePage = () => {
             </div>
 
             <img
-              src="/src/assets/images/circ.jpg"
+              src="/public/images/circ.jpg"
               alt="Circuit Analysis App"
               className="w-[130px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
             />

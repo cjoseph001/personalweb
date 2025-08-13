@@ -3,82 +3,216 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <header className="text-center mb-10">
-        <h1 className="text-4xl md:text-4.5xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400 drop-shadow-lg mb-10 mt-4">
+      <header className="text-center mb-3">
+        <h1
+          className="text-4xl font-bold 
+        text-gray-900 tracking-tight leading-tight mb-10 mt-4 font-sans"
+        >
           Welcome to My Website!
         </h1>
-
-        <img
-          src="/public/images/photo2.jpg"
-          alt="Christian Joseph"
-          className="w-40 h-40 rounded-full object-cover mx-auto shadow-md transition-transform transition-shadow duration-300 hover:scale-105"
-        />
       </header>
 
-      <section className="w-full max-w-3xl bg-white shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Hi! I'm{" "}
-          <span className="font-semibold text-blue-500">Christian Joseph</span>,
-          an Electrical & Electronics Engineering graduate from Nanyang
-          Technological University, Singapore who is passionate about
-          <span className="font-semibold text-blue-500">
-            {" "}
-            mathematics, engineering & technology, and software development
-          </span>
-          . I love building intuitive web applications and exploring new
-          technologies.
-        </p>
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 mx-auto mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
+        <img
+          src="/src/assets/images/photo2.jpg"
+          alt="Christian Joseph"
+          className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
+        />
+        <div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Profile</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Hi! I'm{" "}
+            <span className="font-semibold text-blue-500">
+              Christian Joseph
+            </span>
+            , an Electrical & Electronics Engineering graduate from Nanyang
+            Technological University, Singapore who is passionate about{" "}
+            <span className="font-semibold text-blue-500">
+              mathematics, IT, and software development
+            </span>
+            . I love building intuitive web applications and exploring new
+            technologies.
+          </p>
+        </div>
       </section>
 
-      <section className="w-full max-w-3xl bg-white shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
-        <ul className="list-disc list-inside text-gray-700">
+        <ul className="space-y-8">
+          {" "}
           <li>
-            <strong>Food Dash Website</strong> - Built with HTML, CSS,
-            JavaScript, PHP, SQL.{" "}
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-700 hover:underline transition"
-            >
-              [GitHub Link]
-            </a>
+            <strong className="text-lg">Food-Dash Website</strong>
+            <p className="text-gray-600 mt-4 mb-4">
+              A prototype of e-commerce platform with account registration, cart
+              functionality and database integration. Built for learning
+              full-stack basics with HTML, CSS, JavaScript for frontend and PHP
+              with MySQL for backend.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                HTML
+              </span>
+              <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">
+                CSS
+              </span>
+              <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">
+                JavaScript
+              </span>
+              <span className="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">
+                PHP
+              </span>
+              <span className="px-2 py-1 bg-pink-100 text-pink-800 rounded text-xs">
+                MySQL
+              </span>
+            </div>
+
+            <div className="mt-4 mb-4 flex gap-4">
+              <a
+                href="http://fooddash-web.infinityfreeapp.com"
+                className="text-blue-500 hover:text-blue-800 hover:underline transition"
+              >
+                <strong>[Click Here for Live Preview]</strong>
+              </a>
+
+              <a
+                href="https://github.com/cjoseph001/food-ordering-web"
+                className="text-green-500 hover:text-green-800 hover:underline transition"
+              >
+                <strong>[GitHub Link]</strong>
+              </a>
+            </div>
+
+            <img
+              src="/src/assets/images/fooddash1.jpg"
+              alt="Food Dash Website"
+              className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              loading="lazy"
+            />
           </li>
+          {/* ===== PROJECT 2 ===== */}
           <li>
-            <strong>E-Commerce Prototype Website</strong> - Built with React and
-            CSS.{" "}
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-700 hover:underline transition"
-            >
-              [GitHub Link]
-            </a>
+            <strong className="text-lg">E-Commerce Prototype Website</strong>
+            <p className="text-gray-600 mt-2">
+              {/* ADDED: Project description placeholder */}A front-end React
+              based e-commerce prototype website with product browsing,
+              filtering, and cart functionality simulation.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                React
+              </span>
+              <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">
+                CSS
+              </span>
+            </div>
+
+            <div className="mt-4 mb-4 flex gap-4">
+              <a
+                href="https://cj-shop.vercel.app"
+                className="text-blue-500 hover:text-blue-800 hover:underline transition"
+              >
+                <strong>[Click Here for Live Preview]</strong>
+              </a>
+
+              <a
+                href="https://github.com/cjoseph001/cj_shop"
+                className="text-green-500 hover:text-green-800 hover:underline transition"
+              >
+                <strong>[GitHub Link]</strong>
+              </a>
+            </div>
+
+            <img
+              src="src/assets/images/shop.jpg"
+              className="w-full max-w-sm rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+              alt="E-Commerce Website"
+            />
           </li>
+          {/* ===== PROJECT 3 ===== */}
           <li>
-            <strong>Circuit Analysis App</strong> - Built with Dart and Flutter.{" "}
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-700 hover:underline transition"
-            >
-              [GitHub Link]
-            </a>
+            <strong className="text-lg">Circuit Analysis App</strong>
+            <p className="text-gray-600 mt-2">
+              {/* ADDED: Project description placeholder */}A cross platform
+              mobile app for calculating electrical circuit values with
+              step-by-step solutions, built using Flutter and Dart and optimized
+              for iOS devices.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">
+                Dart
+              </span>
+              <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                Flutter
+              </span>
+            </div>
+
+            <div className="mt-4 mb-4 flex gap-4">
+              <a
+                href="https://circuitanalysismobileapp.vercel.app"
+                className="text-blue-500 hover:text-blue-800 hover:underline transition"
+              >
+                <strong>[Click Here for Live Preview on Web]</strong>
+              </a>
+
+              <a
+                href="https://github.com/cjoseph001/circuit_analysis_mobile_app"
+                className="text-green-500 hover:text-green-800 hover:underline transition"
+              >
+                <strong>[GitHub Link]</strong>
+              </a>
+            </div>
+
+            <img
+              src="/src/assets/images/circ.jpg"
+              alt="Circuit Analysis App"
+              className="w-[130px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+            />
           </li>
         </ul>
       </section>
 
-      <section className="w-full max-w-3xl bg-white shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Skills</h2>
-        <p className="text-gray-700">
-          HTML, CSS, JavaScript, React, Tailwind CSS, Python, Git
-        </p>
+        <div className="flex flex-wrap gap-3">
+          {[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "Flutter",
+            "Dart",
+            "SQL",
+            "PHP",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </section>
 
-      <section className="w-full max-w-3xl bg-white shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Hobbies</h2>
-        <p className="text-gray-700">Chess, Sports, Travel</p>
+        <div className="flex flex-wrap gap-3">
+          {["Chess", "Sport", "Travel"].map((hobby) => (
+            <span
+              key={hobby}
+              className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium"
+            >
+              {hobby}
+            </span>
+          ))}
+        </div>
       </section>
 
-      <section className="w-full max-w-3xl bg-white shadow-lg rounded-xl pt-8 p-10 transition-transform transition-shadow duration-300 hover:scale-105">
+      <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact</h2>
         <p className="text-gray-700">Let's connect! Find me on:</p>
         <ul className="list-none mt-3">
@@ -89,7 +223,7 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              [GitHub]
+              <strong>[GitHub]</strong>
             </a>
           </li>
           <li>
@@ -97,12 +231,12 @@ const HomePage = () => {
               href="https://www.linkedin.com/in/christian-joseph-997a2a221/"
               className="text-blue-500"
             >
-              [LinkedIn]
+              <strong>[LinkedIn] </strong>
             </a>
           </li>
           <li>
             <a href="cjoseph001@e.ntu.edu.sg" className="text-blue-500">
-              [Email]
+              <strong>[Email]</strong>
             </a>
           </li>
         </ul>

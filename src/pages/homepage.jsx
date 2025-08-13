@@ -14,7 +14,7 @@ const HomePage = () => {
 
       <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 mx-auto mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <img
-          src="/images/photo2.jpg"
+          src="/images/photo2.JPG"
           alt="Christian Joseph"
           className="w-50 h-50 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
         />

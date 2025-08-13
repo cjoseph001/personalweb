@@ -5,7 +5,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
       <header className="text-center mb-3">
         <h1
-          className="text-4xl font-bold 
+          className="text-3xl font-bold 
         text-gray-900 tracking-tight leading-tight mb-10 mt-4 font-sans"
         >
           Welcome to My Website!
@@ -22,13 +22,20 @@ const HomePage = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Profile</h2>
           <p className="text-gray-700 leading-relaxed">
             Hi! I'm{" "}
-            <span className="font-semibold text-blue-500">
+            <span className="font-semibold text-blue-800">
               Christian Joseph
             </span>
-            , an Electrical & Electronics Engineering graduate from Nanyang
-            Technological University, Singapore who is passionate about{" "}
-            <span className="font-semibold text-blue-500">
-              mathematics, IT, and software development
+            , an{" "}
+            <span className="font-semibold text-blue-800">
+              Electrical & Electronics Engineering{" "}
+            </span>{" "}
+            (EEE) graduate from{" "}
+            <span className="font-semibold text-blue-800">
+              Nanyang Technological University{""}
+            </span>
+            , Singapore who is passionate about{" "}
+            <span className="font-semibold text-blue-800">
+              Mathematics, IT, and Software Development
             </span>
             . I love building intuitive web applications and exploring new
             technologies.
@@ -38,15 +45,16 @@ const HomePage = () => {
 
       <section className="w-full max-w-5xl bg-gray-50 shadow-lg rounded-xl pt-8 p-10 mb-10 transition-transform transition-shadow duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
-        <ul className="space-y-8">
+        <ul className="space-y-16">
           {" "}
           <li>
             <strong className="text-lg">Food-Dash Website</strong>
             <p className="text-gray-600 mt-4 mb-4">
-              A prototype of e-commerce platform with account registration, cart
-              functionality and database integration. Built for learning
-              full-stack basics with HTML, CSS, JavaScript for frontend and PHP
-              with MySQL for backend.
+              A prototype e-commerce platform featuring user account
+              registration, shopping cart functionality, and seamless database
+              integration. Developed to explore full-stack fundamentals, with
+              HTML, CSS, and JavaScript powering the frontend, and PHP with
+              MySQL handling the backend.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -67,7 +75,7 @@ const HomePage = () => {
               </span>
             </div>
 
-            <div className="mt-4 mb-4 flex gap-4">
+            <div className="flex flex-col gap-2 mb-4">
               <a
                 href="http://fooddash-web.infinityfreeapp.com"
                 className="text-blue-500 hover:text-blue-800 hover:underline transition"
@@ -93,13 +101,12 @@ const HomePage = () => {
           {/* ===== PROJECT 2 ===== */}
           <li>
             <strong className="text-lg">E-Commerce Prototype Website</strong>
-            <p className="text-gray-600 mt-2">
-              {/* ADDED: Project description placeholder */}A front-end React
-              based e-commerce prototype website with product browsing,
-              filtering, and cart functionality simulation.
+            <p className="text-gray-600 mt-2 mb-4">
+              A React-based front-end e-commerce prototype featuring product
+              browsing, filtering, and simulated cart functionality.
             </p>
 
-            <div className="flex flex-wrap gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
                 React
               </span>
@@ -108,7 +115,7 @@ const HomePage = () => {
               </span>
             </div>
 
-            <div className="mt-4 mb-4 flex gap-4">
+            <div className="flex flex-col gap-2 mb-4">
               <a
                 href="https://cj-shop.vercel.app"
                 className="text-blue-500 hover:text-blue-800 hover:underline transition"
@@ -133,12 +140,12 @@ const HomePage = () => {
           <li>
             <strong className="text-lg">Circuit Analysis App</strong>
             <p className="text-gray-600 mt-2">
-              A cross platform mobile app for calculating electrical circuit
-              values with step-by-step solutions, built using Flutter and Dart
+              A cross-platform mobile app for calculating electrical circuit
+              values with step-by-step solutions. Built with Flutter and Dart,
               and optimized for iOS devices.
             </p>
 
-            <div className="flex flex-wrap gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3 mb-4">
               <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">
                 Dart
               </span>
@@ -147,7 +154,7 @@ const HomePage = () => {
               </span>
             </div>
 
-            <div className="mt-4 mb-4 flex gap-4">
+            <div className="flex flex-col gap-2 mb-4">
               <a
                 href="https://circuitanalysismobileapp.vercel.app"
                 className="text-blue-500 hover:text-blue-800 hover:underline transition"

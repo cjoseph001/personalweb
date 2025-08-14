@@ -41,7 +41,7 @@ const HomePage = () => {
             technologies.
           </p>
           <a
-            href="Resume1_christianjoseph_aug.pdf"
+            href="resume_christian_joseph_14aug.pdf"
             download="Christian_Joseph_Resume.pdf"
             className="text-blue-500 hover:text-blue-800 hover:underline transition"
           >

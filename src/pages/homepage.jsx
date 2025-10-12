@@ -37,39 +37,52 @@ const HomePage = () => {
       </section>
 
       <main className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <section className="bg-white shadow-lg rounded-xl px-6 py-6 mb-16">
-          <h2 className="text-xl font-bold text-gray-800 mb-6">👤 Profile</h2>
-          <p className="text-gray-700 text-base leading-relaxed mb-3">
-            Hi! I'm{" "}
+        <section className="bg-gradient-to-br from-white to-blue-50 shadow-lg rounded-2xl px-8 py-8 mb-16 transition hover:shadow-xl">
+          <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
+            👤 Profile
+          </h2>
+          <p className="text-gray-700 text-base leading-relaxed">
+            I'm{" "}
             <span className="font-semibold text-blue-800">
               Christian Joseph
             </span>
-            , a recent graduate in{" "}
+            , an{" "}
             <span className="font-semibold text-blue-800">
-              {" "}
               Electrical & Electronic Engineering
             </span>{" "}
-            from
-            <span className="font-semibold text-blue-800"> NTU Singapore</span>.
+            graduate from{" "}
+            <span className="font-semibold text-blue-800">NTU Singapore</span>{" "}
+            who loves bringing ideas to life through code.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
-            I’m passionate about building{" "}
-            <span className="font-semibold text-blue-800">software </span>
-            and{" "}
+          <p className="text-gray-700 text-base leading-relaxed mt-3">
+            I specialize in{" "}
             <span className="font-semibold text-blue-800">
-              web applications
+              frontend development
+            </span>
+            , building smooth, responsive, and modern interfaces using{" "}
+            <span className="font-semibold text-blue-800">
+              HTML, CSS, JavaScript, React and more.
+            </span>
+            . I enjoy transforming clean designs into intuitive web experiences
+            that feel great to use.
+          </p>
+          <p className="text-gray-700 text-base leading-relaxed mt-3">
+            Constantly exploring new tools and frameworks, I’m driven by the
+            goal of crafting
+            <span className="font-semibold text-blue-800">
+              {" "}
+              fast, aesthetic, and user-focused web applications
             </span>{" "}
-            that are intuitive, efficient, and user-focused. I enjoy tackling
-            challenges and continuously learning new technologies to deliver
-            impactful solutions.
+            that make a real impact.
           </p>
         </section>
+
         {/* Projects Section */}
         <section
           id="projects"
           className="bg-white shadow-lg rounded-xl p-8 mb-16"
         >
-          <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+          <h2 className="text-xl font-bold text-gray-800 mb-8 text-center">
             🚀 Personal Projects
           </h2>
 

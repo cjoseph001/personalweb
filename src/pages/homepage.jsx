@@ -64,80 +64,150 @@ const HomePage = () => {
             impactful solutions.
           </p>
         </section>
-
         {/* Projects Section */}
         <section
           id="projects"
           className="bg-white shadow-lg rounded-xl p-8 mb-16"
         >
-          <h2 className="text-xl font-bold text-gray-800 mb-8 text-center">
-            🚀 My Projects
+          <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+            🚀 Personal Projects
           </h2>
+
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Food-Dash Website",
-                desc: "A prototype e-commerce platform featuring user accounts, shopping cart, and MySQL backend integration.",
-                img: "/images/fooddash1.jpg",
-                live: "http://fooddash-web.infinityfreeapp.com",
+                title: "Food Ordering Website",
+                desc: "A full-stack food ordering mock website with user accounts, shopping cart, and MySQL backend integration. The admin page allows real-time order tracking, updating order statuses, and managing completed orders. Built with HTML, CSS, JavaScript, PHP, and MySQL.",
+                images: [
+                  { src: "/images/fooddash_user.jpg", alt: "User Page" },
+                  { src: "/images/fooddash_admin.jpg", alt: "Admin Page" },
+                ],
                 github: "https://github.com/cjoseph001/food-ordering-web",
+                websites: [
+                  {
+                    label: "User Page",
+                    link: "http://fooddash-web.infinityfreeapp.com",
+                  },
+                  {
+                    label: "Admin Page",
+                    link: "http://fooddash-web.infinityfreeapp.com/order_data.php",
+                  },
+                ],
               },
               {
-                title: "E-Commerce Prototype Website",
-                desc: "A React-based front-end prototype with product browsing and cart simulation.",
-                img: "/images/shop.jpg",
-                live: "https://cj-shop.vercel.app",
-                github: "https://github.com/cjoseph001/cj_shop",
-              },
-              {
-                title: "CJ Travel Website",
-                desc: "A simple design project built with HTML and CSS.",
-                img: "/images/trav.jpg",
-                live: "https://cj-travel-website.vercel.app",
-                github: "https://github.com/cjoseph001/cj-travel-website",
+                title: "Online Shop Website",
+                desc: "A prototype e-commerce platform built with Next.js, React.js, Tailwind CSS, and Supabase. The user page features product browsing, filtering, and a shopping cart. The admin dashboard allows the shop to add, delete, and modify products. The admin dashboard requires authentication; a demo video is provided for preview.",
+                images: [
+                  { src: "/images/nextshop_user.jpg", alt: "User Page" },
+                  { src: "/images/nextshop_admin.jpg", alt: "Admin Dashboard" },
+                ],
+                github: "https://github.com/cjoseph001/melzer-site",
+                websites: [
+                  {
+                    label: "User Page",
+                    link: "https://melzer-site.vercel.app",
+                  },
+                ],
+                adminDemo: "/videos/shopadmindemo.mp4",
               },
               {
                 title: "Circuit Analysis App",
-                desc: "A cross-platform app for calculating electrical circuit values with step-by-step solutions, built in Flutter.",
-                img: "/images/circ.jpg",
-                live: "https://circuitanalysismobileapp.vercel.app",
+                desc: "A cross-platform mobile app built with Flutter for calculating electrical circuit values. Provides step-by-step solutions for resistor, capacitor and inductor circuit problems. Specially designed for iOS devices, the app delivers a smooth interface and intuitive navigation.",
+                images: [{ src: "/images/circ.jpg", alt: "Main Screen" }],
                 github:
                   "https://github.com/cjoseph001/circuit_analysis_mobile_app",
+                websites: [
+                  {
+                    label: "Web Preview",
+                    link: "https://circuitanalysismobileapp.vercel.app",
+                  },
+                ],
+                adminDemo: "/videos/circuitappvideo.MP4",
               },
-            ].map((proj) => (
+              {
+                title: "CJ Travel Website",
+                desc: "A website design project built with HTML and CSS, featuring a responsive design and a clean, user-friendly interface. The website provides travel information about various countries, including popular destinations and attractions.",
+                images: [
+                  { src: "/images/cjtravel1.jpg", alt: "Home Page" },
+                  { src: "/images/cjtravel2.jpg", alt: "Destination Page" },
+                ],
+                github: "https://github.com/cjoseph001/cj-travel-website",
+                websites: [
+                  {
+                    label: "Website",
+                    link: "https://cj-travel-website.vercel.app",
+                  },
+                ],
+              },
+              {
+                title: "CJ Shop",
+                desc: "React-based front-end prototype simulating an online shop with product browsing, search, and cart functionality. Demonstrates modern UI/UX and state management.",
+                images: [
+                  { src: "/images/cjshop1.jpg", alt: "Home Page" },
+                  { src: "/images/cjshop2.jpg", alt: "Product Page" },
+                ],
+                github: "https://github.com/cjoseph001/cj_shop",
+                websites: [
+                  { label: "Website", link: "https://cj-shop.vercel.app" },
+                ],
+              },
+            ].map((proj, idx) => (
               <div
-                key={proj.title}
+                key={idx}
                 className="flex flex-col bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition"
               >
-                {/* Full Image (tidy) */}
-                <div className="flex justify-center items-center mb-8">
-                  <img
-                    src={proj.img}
-                    alt={proj.title}
-                    className="rounded-lg max-h-56 w-full object-contain"
-                  />
+                {/* Images */}
+                <div className="grid grid-cols-2 gap-2 mb-6">
+                  {proj.images.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img.src}
+                      alt={`${proj.title} ${img.alt}`}
+                      className="rounded-lg w-full max-h-[175px] object-contain"
+                    />
+                  ))}
                 </div>
+
+                {/* Title & Description */}
                 <h3 className="text-lg font-semibold text-gray-800">
                   {proj.title}
                 </h3>
                 <p className="text-gray-600 mt-2 mb-6 flex-grow">{proj.desc}</p>
-                <div className="flex gap-4 mt-auto">
-                  <a
-                    href={proj.live}
-                    className="text-blue-600 hover:underline font-semibold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    🌍 Live
-                  </a>
-                  <a
-                    href={proj.github}
-                    className="text-gray-600 hover:underline font-semibold"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    💻 GitHub
-                  </a>
+
+                {/* Buttons */}
+                <div className="flex gap-3 mt-auto flex-wrap text-sm">
+                  {proj.github && (
+                    <a
+                      href={proj.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-lg bg-gray-100 text-gray-800 hover:bg-gray-200 hover:shadow transition-shadow duration-200 font-medium"
+                    >
+                      💻 GitHub
+                    </a>
+                  )}
+                  {proj.websites &&
+                    proj.websites.map((w, i) => (
+                      <a
+                        key={i}
+                        href={w.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 rounded-lg bg-blue-100 text-blue-800 hover:bg-blue-200 hover:shadow transition-shadow duration-200 font-medium"
+                      >
+                        🌐 {w.label}
+                      </a>
+                    ))}
+                  {proj.adminDemo && (
+                    <a
+                      href={proj.adminDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-lg bg-green-100 text-green-800 hover:bg-green-200 hover:shadow transition-shadow duration-200 font-medium"
+                    >
+                      🎬 Demo Video
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

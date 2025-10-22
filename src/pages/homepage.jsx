@@ -89,6 +89,39 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
+                title: "Online Shop Website",
+                desc: "A prototype e-commerce platform built with Next.js, React.js, Tailwind CSS, and Supabase. The user page features product browsing, filtering, and a shopping cart. The admin dashboard allows the shop to add, delete, and modify products. The admin dashboard requires authentication; a demo video is provided for preview.",
+                images: [
+                  { src: "/images/nextshop_user.jpg", alt: "User Page" },
+                  { src: "/images/nextshop_admin.jpg", alt: "Admin Dashboard" },
+                ],
+                github: "https://github.com/cjoseph001/melzer-site",
+                websites: [
+                  {
+                    label: "User Page",
+                    link: "https://melzer-site.vercel.app",
+                  },
+                ],
+                adminDemo: "/videos/shopadmindemo.mp4",
+              },
+
+              {
+                title: "MyFitnessBuddy",
+                desc: "A full-stack fitness tracking web app that allows users to log workouts, track progress, and analyze performance. Built with React, Vite, Node.js, Express, MySQL, and Tailwind CSS. Features include user authentication, analytics dashboards, exercise tracking, and muscle distribution visualization.",
+                images: [
+                  { src: "/images/myfitnessbuddy1.jpg", alt: "Dashboard" },
+                  { src: "/images/myfitnessbuddy2.jpg", alt: "Workout Log" },
+                ],
+                github: "https://github.com/cjoseph001/myfitnessbuddy",
+                websites: [
+                  {
+                    label: "Web Preview",
+                    link: "https://myfitnessbuddy-delta.vercel.app",
+                  },
+                ],
+              },
+
+              {
                 title: "Food Ordering Website",
                 desc: "A full-stack food ordering mock website with user accounts, shopping cart, and MySQL backend integration. The admin page allows real-time order tracking, updating order statuses, and managing completed orders. Built with HTML, CSS, JavaScript, PHP, and MySQL.",
                 images: [
@@ -107,22 +140,7 @@ const HomePage = () => {
                   },
                 ],
               },
-              {
-                title: "Online Shop Website",
-                desc: "A prototype e-commerce platform built with Next.js, React.js, Tailwind CSS, and Supabase. The user page features product browsing, filtering, and a shopping cart. The admin dashboard allows the shop to add, delete, and modify products. The admin dashboard requires authentication; a demo video is provided for preview.",
-                images: [
-                  { src: "/images/nextshop_user.jpg", alt: "User Page" },
-                  { src: "/images/nextshop_admin.jpg", alt: "Admin Dashboard" },
-                ],
-                github: "https://github.com/cjoseph001/melzer-site",
-                websites: [
-                  {
-                    label: "User Page",
-                    link: "https://melzer-site.vercel.app",
-                  },
-                ],
-                adminDemo: "/videos/shopadmindemo.mp4",
-              },
+
               {
                 title: "Circuit Analysis App",
                 desc: "A cross-platform mobile app built with Flutter for calculating electrical circuit values. Provides step-by-step solutions for resistor, capacitor and inductor circuit problems. Specially designed for iOS devices, the app delivers a smooth interface and intuitive navigation.",

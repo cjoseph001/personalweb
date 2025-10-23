@@ -62,8 +62,8 @@ const HomePage = () => {
             , building smooth, responsive, and modern interfaces using{" "}
             <span className="font-semibold text-blue-800">
               HTML, CSS, JavaScript, React and more.
-            </span>
-            . I enjoy transforming clean designs into intuitive web experiences
+            </span>{" "}
+            I enjoy transforming clean designs into intuitive web experiences
             that feel great to use.
           </p>
           <p className="text-gray-700 text-base leading-relaxed mt-3">
@@ -77,10 +77,9 @@ const HomePage = () => {
           </p>
         </section>
 
-        {/* Projects Section */}
         <section
           id="projects"
-          className="bg-white shadow-lg rounded-xl p-8 mb-16"
+          className="bg-white/90 backdrop-blur-sm shadow-lg rounded-2xl p-8 mb-16 transition hover:shadow-2xl hover:scale-[1.01] transform duration-300"
         >
           <h2 className="text-xl font-bold text-gray-800 mb-8 text-center">
             🚀 Personal Projects
@@ -89,8 +88,8 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Online Shop Website",
-                desc: "A prototype e-commerce platform built with Next.js, React.js, Tailwind CSS, and Supabase. The user page features product browsing, filtering, and a shopping cart. The admin dashboard allows the shop to add, delete, and modify products. The admin dashboard requires authentication; a demo video is provided for preview.",
+                title: "E-Commerce Shop Prototype (Frontend-Focused)",
+                desc: "A modern e-commerce prototype built with Next.js, React, Tailwind CSS, and Supabase, featuring intuitive product browsing, filtering, and cart management for users. The highlight of this frontend-focused project is the authenticated admin dashboard, which allows shop admins to seamlessly add, edit, and delete products. Designed with a clean, responsive interface. Below shows a demo video for admin & user interface preview.",
                 images: [
                   { src: "/images/nextshop_user.jpg", alt: "User Page" },
                   { src: "/images/nextshop_admin.jpg", alt: "Admin Dashboard" },
@@ -106,8 +105,8 @@ const HomePage = () => {
               },
 
               {
-                title: "MyFitnessBuddy",
-                desc: "A full-stack fitness tracking web app that allows users to log workouts, track progress, and analyze performance. Built with React, Vite, Node.js, Express, MySQL, and Tailwind CSS. Features include user authentication, analytics dashboards, exercise tracking, and muscle distribution visualization.",
+                title: "MyFitnessBuddy – Fitness Tracking Web App",
+                desc: "A full-stack fitness tracking platform built with React (Vite), Node.js/Express, MySQL, and Tailwind CSS, enabling users to log workouts, track progress, and analyze performance through interactive analytics dashboards. Features include user authentication, detailed exercise and muscle insights, and performance charts, all wrapped in a fast, responsive UI designed for an interactive user experience.",
                 images: [
                   { src: "/images/myfitnessbuddy1.jpg", alt: "Dashboard" },
                   { src: "/images/myfitnessbuddy2.jpg", alt: "Workout Log" },
@@ -122,8 +121,8 @@ const HomePage = () => {
               },
 
               {
-                title: "Food Ordering Website",
-                desc: "A full-stack food ordering mock website with user accounts, shopping cart, and MySQL backend integration. The admin page allows real-time order tracking, updating order statuses, and managing completed orders. Built with HTML, CSS, JavaScript, PHP, and MySQL.",
+                title: "FoodDash - Food Ordering Website",
+                desc: "A full-stack food ordering prototype website with user accounts, shopping cart, and MySQL backend integration. The admin page allows real-time order tracking, updating order statuses, and managing completed orders. Built with HTML, CSS, JavaScript, PHP, and MySQL.",
                 images: [
                   { src: "/images/fooddash_user.jpg", alt: "User Page" },
                   { src: "/images/fooddash_admin.jpg", alt: "Admin Page" },
@@ -142,8 +141,8 @@ const HomePage = () => {
               },
 
               {
-                title: "Circuit Analysis App",
-                desc: "A cross-platform mobile app built with Flutter for calculating electrical circuit values. Provides step-by-step solutions for resistor, capacitor and inductor circuit problems. Specially designed for iOS devices, the app delivers a smooth interface and intuitive navigation.",
+                title: "Circuit Analysis –  Mobile App",
+                desc: "A cross-platform mobile app developed with Flutter and Dart that calculates electrical circuit parameters for resistor, capacitor, and inductor-based circuits, offering step-by-step solutions for learning and analysis. Tailored for iOS devices.",
                 images: [{ src: "/images/circ.jpg", alt: "Main Screen" }],
                 github:
                   "https://github.com/cjoseph001/circuit_analysis_mobile_app",
@@ -185,7 +184,7 @@ const HomePage = () => {
             ].map((proj, idx) => (
               <div
                 key={idx}
-                className="flex flex-col bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition"
+                className="flex flex-col bg-white/90 backdrop-blur-sm rounded-2xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
               >
                 {/* Images */}
                 <div className="grid grid-cols-2 gap-2 mb-6">
@@ -212,7 +211,7 @@ const HomePage = () => {
                       href={proj.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-lg bg-gray-100 text-gray-800 hover:bg-gray-200 hover:shadow transition-shadow duration-200 font-medium"
+                      className="px-5 py-2 rounded-2xl bg-gradient-to-r from-gray-200 to-gray-100 text-gray-900 font-semibold shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 backdrop-blur-md hover:from-gray-300 hover:to-gray-200"
                     >
                       💻 GitHub
                     </a>
@@ -224,7 +223,7 @@ const HomePage = () => {
                         href={w.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 rounded-lg bg-blue-100 text-blue-800 hover:bg-blue-200 hover:shadow transition-shadow duration-200 font-medium"
+                        className="px-5 py-2 rounded-2xl bg-gradient-to-r from-blue-200 to-blue-100 text-blue-900 font-semibold shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 backdrop-blur-md hover:from-blue-300 hover:to-blue-200"
                       >
                         🌐 {w.label}
                       </a>
@@ -234,7 +233,7 @@ const HomePage = () => {
                       href={proj.adminDemo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-lg bg-green-100 text-green-800 hover:bg-green-200 hover:shadow transition-shadow duration-200 font-medium"
+                      className="px-5 py-2 rounded-2xl bg-gradient-to-r from-green-200 to-green-100 text-green-900 font-semibold shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 backdrop-blur-md hover:from-green-300 hover:to-green-200"
                     >
                       🎬 Demo Video
                     </a>

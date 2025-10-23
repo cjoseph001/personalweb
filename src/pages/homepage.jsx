@@ -187,7 +187,7 @@ const HomePage = () => {
                 className="flex flex-col bg-white/90 backdrop-blur-sm rounded-2xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
               >
                 {/* Images */}
-                <div className="grid grid-cols-2 gap-2 mb-6">
+                <div className="grid grid-cols-2 gap-2 mb-10">
                   {proj.images.map((img, i) => (
                     <img
                       key={i}
@@ -202,7 +202,7 @@ const HomePage = () => {
                 <h3 className="text-lg font-semibold text-gray-800">
                   {proj.title}
                 </h3>
-                <p className="text-gray-600 mt-2 mb-6 flex-grow">{proj.desc}</p>
+                <p className="text-gray-600 mt-2 mb-8 flex-grow">{proj.desc}</p>
 
                 {/* Buttons */}
                 <div className="flex gap-3 mt-auto flex-wrap text-sm">

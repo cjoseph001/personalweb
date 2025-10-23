@@ -20,7 +20,7 @@ const HomePage = () => {
           </p>
           <div className="flex justify-center gap-3 text-sm">
             <a
-              href="/resume_christian_joseph_29sep2025.pdf"
+              href="/resume_christian_joseph_oct2025.pdf"
               download="Christian_Joseph_Resume.pdf"
               className="px-4 py-2 rounded-2xl text-sm font-semibold 
              bg-gradient-to-r from-gray-600 to-gray-700 text-white 

@@ -5,30 +5,37 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       {/* Hero Section */}
-      <section className="relative w-full h-[55vh] md:h-[65vh] flex items-center justify-center bg-gradient-to-r from-blue-100 via-white to-blue-50 shadow-md mb-14">
+      <section className="relative w-full h-[57vh] md:h-[67vh] flex items-center justify-center bg-gradient-to-r from-blue-100 via-white to-blue-50 shadow-md mb-8">
         <div className="text-center px-4">
           <img
             src="/images/photo2.JPG"
             alt="Christian Joseph"
-            className="w-32 h-47 md:w-42 md:h-60 mx-auto rounded-full shadow-lg border-4 border-white mb-6"
+            className="w-35 h-51 md:w-43 md:h-63 mx-auto rounded-full shadow-lg border-4 border-white mb-6"
           />
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
             Christian Joseph
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-6">
+          <p className="text-base md:text-lg text-gray-600 mb-10">
             Website Developer
           </p>
-          <div className="flex justify-center gap-3.5 text-sm">
+          <div className="flex justify-center gap-3 text-sm">
             <a
               href="/resume_christian_joseph_29sep2025.pdf"
               download="Christian_Joseph_Resume.pdf"
-              className="bg-gray-600 text-white px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-300 hover:text-gray-600 transition"
+              className="px-4 py-2 rounded-2xl text-sm font-semibold 
+             bg-gradient-to-r from-gray-600 to-gray-700 text-white 
+             hover:from-gray-800 hover:to-gray-900 hover:scale-[1.03] 
+             active:scale-95 transition-all duration-300"
             >
               📄 Resume
             </a>
+
             <a
               href="#projects"
-              className="bg-gray-200 px-3 py-1.5 rounded-lg shadow-md hover:bg-gray-600 hover:text-gray-300 transition"
+              className="px-4 py-2 rounded-2xl text-sm font-semibold 
+             bg-gradient-to-r from-gray-200 to-gray-300 text-gray-800 
+             hover:from-gray-300 hover:to-gray-400 hover:text-gray-900 
+             hover:scale-[1.03] active:scale-95 transition-all duration-300"
             >
               🚀 Projects
             </a>
@@ -37,7 +44,7 @@ const HomePage = () => {
       </section>
 
       <main className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <section className="bg-gradient-to-br from-white to-blue-50 shadow-lg rounded-2xl px-8 py-8 mb-16 transition hover:shadow-xl">
+        <section className="bg-gradient-to-br from-white to-blue-50 shadow-lg rounded-2xl px-8 py-8 mb-8 transition hover:shadow-xl">
           <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
             👤 Profile
           </h2>
@@ -79,7 +86,7 @@ const HomePage = () => {
 
         <section
           id="projects"
-          className="bg-white/90 backdrop-blur-sm shadow-lg rounded-2xl p-8 mb-16 transition hover:shadow-2xl hover:scale-[1.01] transform duration-300"
+          className="bg-white/90 backdrop-blur-sm shadow-lg rounded-2xl p-8 mb-8 transition hover:shadow-2xl transform duration-300"
         >
           <h2 className="text-xl font-bold text-gray-800 mb-8 text-center">
             🚀 Personal Projects
@@ -184,7 +191,9 @@ const HomePage = () => {
             ].map((proj, idx) => (
               <div
                 key={idx}
-                className="flex flex-col bg-white/90 backdrop-blur-sm rounded-2xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
+                className="flex flex-col bg-gradient-to-br from-white to-gray-50 border border-gray-200 
+                         rounded-2xl p-6 transition-all duration-300 
+                         hover:border-gray-300 hover:bg-gradient-to-br hover:from-gray-50 hover:to-gray-100"
               >
                 {/* Images */}
                 <div className="grid grid-cols-2 gap-2 mb-10">
@@ -245,7 +254,7 @@ const HomePage = () => {
         </section>
 
         {/* Skills Section */}
-        <section className="bg-white shadow-lg rounded-xl p-6 mb-16">
+        <section className="bg-white shadow-lg rounded-xl p-6 mb-8">
           <h2 className="text-xl font-bold text-gray-800 mb-6">🛠 Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {[
@@ -270,7 +279,7 @@ const HomePage = () => {
         </section>
 
         {/* Hobbies Section */}
-        <section className="bg-white shadow-lg rounded-xl px-6 py-6 mb-16">
+        <section className="bg-white shadow-lg rounded-xl px-6 py-6 mb-8">
           <h2 className="text-xl font-bold text-gray-800 mb-6">🎯 Hobbies</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {["♟ Chess", "⚽ Sports", "✈️ Travel"].map((hobby) => (
@@ -285,7 +294,7 @@ const HomePage = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-white shadow-lg rounded-xl p-6 mb-16 text-center">
+        <section className="bg-white shadow-lg rounded-xl p-6 mb-10 text-center">
           <h2 className="text-xl font-bold text-gray-800 mb-4">
             📬 Contact Me
           </h2>

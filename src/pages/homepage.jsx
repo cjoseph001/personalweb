@@ -149,7 +149,7 @@ const HomePage = () => {
 
               {
                 title: "Circuit Analysis –  Mobile App",
-                desc: "A cross-platform mobile app developed with Flutter and Dart that calculates electrical circuit parameters for resistor, capacitor, and inductor-based circuits, offering step-by-step solutions for learning and analysis. Tailored for iOS devices.",
+                desc: "A cross-platform mobile app developed with Flutter and Dart that calculates electrical circuit parameters for resistor, capacitor, and inductor-based circuits, offering step-by-step solutions for learning and analysis. Specifically designed for iOS devices.",
                 images: [{ src: "/images/circ.jpg", alt: "Main Screen" }],
                 github:
                   "https://github.com/cjoseph001/circuit_analysis_mobile_app",

@@ -108,7 +108,10 @@ const HomePage = () => {
                     link: "https://melzer-site.vercel.app",
                   },
                 ],
-                adminDemo: "/videos/shopadmindemo.mp4",
+                adminDemo: {
+                  label: "Admin Dashboard and UI Demo",
+                  link: "/videos/shopadmindemo.mp4",
+                },
               },
 
               {
@@ -125,7 +128,10 @@ const HomePage = () => {
                     link: "https://myfitnessbuddy-delta.vercel.app",
                   },
                 ],
-                adminDemo: "/videos/myfitnessbuddy_demo.mp4",
+                adminDemo: {
+                  label: "Web Demo",
+                  link: "/videos/myfitnessbuddy_demo.mp4",
+                },
               },
 
               {
@@ -160,7 +166,10 @@ const HomePage = () => {
                     link: "https://circuitanalysismobileapp.vercel.app",
                   },
                 ],
-                adminDemo: "/videos/circuitappvideo.MP4",
+                adminDemo: {
+                  label: "App Demo",
+                  link: "/videos/circuitappvideo.MP4",
+                },
               },
               {
                 title: "CJ Travel Website",
@@ -240,12 +249,12 @@ const HomePage = () => {
                     ))}
                   {proj.adminDemo && (
                     <a
-                      href={proj.adminDemo}
+                      href={proj.adminDemo.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-5 py-2 rounded-2xl bg-gradient-to-r from-green-200 to-green-100 text-green-900 font-semibold shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 backdrop-blur-md hover:from-green-300 hover:to-green-200"
                     >
-                      🎬 Demo Video
+                      🎬 {proj.adminDemo.label}
                     </a>
                   )}
                 </div>

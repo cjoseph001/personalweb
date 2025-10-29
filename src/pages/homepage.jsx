@@ -104,7 +104,7 @@ const HomePage = () => {
                 github: "https://github.com/cjoseph001/melzer-site",
                 websites: [
                   {
-                    label: "User Page",
+                    label: "Web Preview",
                     link: "https://melzer-site.vercel.app",
                   },
                 ],
@@ -138,11 +138,11 @@ const HomePage = () => {
                 github: "https://github.com/cjoseph001/food-ordering-web",
                 websites: [
                   {
-                    label: "User Page",
+                    label: "Web Preview",
                     link: "http://fooddash-web.infinityfreeapp.com",
                   },
                   {
-                    label: "Admin Page",
+                    label: "Order Lists",
                     link: "http://fooddash-web.infinityfreeapp.com/order_data.php",
                   },
                 ],

@@ -125,7 +125,7 @@ const HomePage = () => {
                     link: "https://myfitnessbuddy-delta.vercel.app",
                   },
                 ],
-                adminDemo: "/videos/myfitnessbuddy_demo.MP4",
+                adminDemo: "/videos/myfitnessbuddy_demo.mp4",
               },
 
               {

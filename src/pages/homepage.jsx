@@ -109,7 +109,7 @@ const HomePage = () => {
                   },
                 ],
                 adminDemo: {
-                  label: "Admin Dashboard and UI Demo",
+                  label: "Admin and UI Demo",
                   link: "/videos/shopadmindemo.mp4",
                 },
               },

@@ -109,7 +109,7 @@ const HomePage = () => {
                   },
                 ],
                 adminDemo: {
-                  label: "Admin and UI Demo",
+                  label: "Admin Dashboard Video",
                   link: "/videos/shopadmindemo1.mp4",
                 },
               },
@@ -129,7 +129,7 @@ const HomePage = () => {
                   },
                 ],
                 adminDemo: {
-                  label: "Web Demo",
+                  label: "Web Video",
                   link: "/videos/myfitnessbuddy_demo.mp4",
                 },
               },
@@ -148,7 +148,7 @@ const HomePage = () => {
                     link: "http://fooddash-web.infinityfreeapp.com",
                   },
                   {
-                    label: "Order Lists",
+                    label: "Order Lists (Admin View)",
                     link: "http://fooddash-web.infinityfreeapp.com/order_data.php",
                   },
                 ],
@@ -167,7 +167,7 @@ const HomePage = () => {
                   },
                 ],
                 adminDemo: {
-                  label: "App Demo",
+                  label: "App Video",
                   link: "/videos/circuitappvideo.MP4",
                 },
               },
@@ -205,15 +205,19 @@ const HomePage = () => {
                          rounded-2xl p-6 transition-all duration-300 
                          hover:border-gray-300 hover:bg-gradient-to-br hover:from-gray-50 hover:to-gray-100"
               >
-                {/* Images */}
                 <div className="grid grid-cols-2 gap-2 mb-10">
                   {proj.images.map((img, i) => (
-                    <img
+                    <div
                       key={i}
-                      src={img.src}
-                      alt={`${proj.title} ${img.alt}`}
-                      className="rounded-lg w-full max-h-[175px] object-contain"
-                    />
+                      className="rounded-xl overflow-hidden bg-white backdrop-blur-sm shadow-inner
+                 ring-1 ring-gray-200/60"
+                    >
+                      <img
+                        src={img.src}
+                        alt={`${proj.title} ${img.alt}`}
+                        className="w-full max-h-[175px] object-contain transition-transform duration-300"
+                      />
+                    </div>
                   ))}
                 </div>
 

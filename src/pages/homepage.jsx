@@ -20,7 +20,7 @@ const HomePage = () => {
           </p>
           <div className="flex justify-center gap-3 text-sm">
             <a
-              href="/resume_christian_joseph_oct2025.pdf"
+              href="/resume_christian_joseph_nov2025.pdf"
               download="Christian_Joseph_Resume.pdf"
               className="px-4 py-2 rounded-2xl text-sm font-semibold 
              bg-gradient-to-r from-gray-600 to-gray-700 text-white 
@@ -95,7 +95,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "E-Commerce Shop Prototype (Frontend-Focused)",
+                title: "Chris-Shop (Frontend E-Commerce Prototype)",
                 desc: "A modern e-commerce prototype built with Next.js, React, Tailwind CSS, and Supabase, featuring intuitive product browsing, filtering, and cart management for users. The highlight of this frontend-focused project is the authenticated admin dashboard, which allows shop admins to seamlessly add, edit, and delete products. Designed with a clean, responsive interface. Below shows a demo video for admin & user interface preview.",
                 images: [
                   { src: "/images/nextshop_user.jpg", alt: "User Page" },
@@ -110,7 +110,7 @@ const HomePage = () => {
                 ],
                 adminDemo: {
                   label: "Admin and UI Demo",
-                  link: "/videos/shopadmindemo.mp4",
+                  link: "/videos/shopadmindemo1.mp4",
                 },
               },
 

@@ -105,7 +105,7 @@ const HomePage = () => {
                 websites: [
                   {
                     label: "Web Preview",
-                    link: "https://melzer-site.vercel.app",
+                    link: "https://chrisshop-site.vercel.app",
                   },
                 ],
                 adminDemo: {
